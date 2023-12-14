@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
  
 *{
 margin: 0;
@@ -17,8 +18,8 @@ padding: 0;
        display: flex;
        flex-direction: row;
        justify-content: space-between;
-       position: sticky;
-       top: 0;
+       position: static;
+       top: 0px;
 
  }
 
@@ -29,6 +30,7 @@ padding: 0;
  }
 
 header ul{
+     font-family: 'Bebas Neue', sans-serif;
     list-style: none;
     height: 100%;
     display: flex;
@@ -48,6 +50,7 @@ nav{
 
 
 .tituloh1{
+        font-family: 'Bebas Neue', sans-serif;
         text-align: left;
         font-size: 25px;
         color: black;
@@ -55,6 +58,7 @@ nav{
 }
 
 .presentacion{
+        font-family: 'Bebas Neue', sans-serif;
         text-align: center;  
         font-size: 25px;
         color: black;
@@ -64,6 +68,7 @@ nav{
      
 
 .padreflex{
+        font-family: 'Bebas Neue', sans-serif;
         display: flex;
         text-align: center;
         flex-direction: row;
@@ -183,3 +188,38 @@ footer.logoinstagram{
          background-color: #618264;
         border: 1px ;
 }
+
+/*mediaq*/
+/*celulares*/
+
+@media only screen and (max-width:500px) {
+        header{
+              flex-direction: column;
+        } 
+
+        nav{ 
+        width: 100%;
+        }
+
+        .padreflex{
+        font-size: 20px;
+       }
+
+/*sobrenosotros*/
+.contenedor-grid{
+        grid-template-areas: 
+        "celda1 texto1 texto1"
+        "texto2 texto2 celda2 "
+        "celda3 texto3 texto3";
+
+        grid-template-columns: 150px;
+    
+        grid-template-rows: 33%;
+} 
+
+/*footer*/
+
+footer div{
+        width: 60%;
+}
+} 
