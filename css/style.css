@@ -87,7 +87,38 @@ div img{
 header a{
         color: white;
         text-decoration: none;
+
 }
+
+
+/*---------------novedades-------------------------*/
+
+.container-novedades{
+      
+        font-family: 'Bebas Neue', sans-serif;
+}
+
+
+
+/*----------------productos------------------------*/
+
+.container{
+          
+        font-family: 'Bebas Neue', sans-serif;
+
+
+}
+
+
+/*--------------- CONTACTO---------------------------*/
+
+.mapa{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center ;
+        margin: 20px opx;
+}
+
 
 /*------------sobre nosotros---------------------------*/
 
@@ -98,6 +129,7 @@ header a{
 
 .contenedor-grid{
  display: grid ;
+ font-size: 18px;
 
  /*definir areas*/
  grid-template-areas :
@@ -105,12 +137,12 @@ header a{
  "celda1 texto1 texto1"
  "texto2 texto2 celda2 "
  "celda3 texto3 texto3";
- 
+    
  /*-ancho de cada columna*/
- grid-template-columns:33% 33% 33% ;
+ grid-template-columns:25% 25% 25% ;
 
  /*-alto de cada fila*/
- grid-template-rows: 250px 250px 250px;
+ grid-template-rows: 200px 200px 200px;
 
 
  /* acomodar a los hijos*/
@@ -121,8 +153,8 @@ header a{
  justify-content: center;
 
  /* espacios entre lineas y columnas*/
- row-gap: 2px ;
- column-gap: 2px ;
+ row-gap: 10px ;
+ column-gap: 10px ;
 
 }
 
@@ -194,27 +226,35 @@ footer.logoinstagram{
 
 @media only screen and (max-width:500px) {
         header{
-              flex-direction: column;
-        } 
-
-        nav{ 
-        width: 100%;
+                flex-direction: column;
+        }
+        
+        nav{
+             width: 100%;   
         }
 
-        .padreflex{
-        font-size: 20px;
-       }
+        header ul{
+               font-size: 1.5rem;
+
+
+        }
 
 /*sobrenosotros*/
 .contenedor-grid{
         grid-template-areas: 
-        "celda1 texto1 texto1"
-        "texto2 texto2 celda2 "
-        "celda3 texto3 texto3";
+        "celda1" 
+        "texto1"
+        "texto1"
+        "celda2"
+        "texto2"
+        "texto2" 
+        "celda3"
+        "texto3"
+        "texto3";
 
         grid-template-columns: 150px;
     
-        grid-template-rows: 33%;
+        grid-template-rows: 25%;
 } 
 
 /*footer*/
@@ -222,4 +262,6 @@ footer.logoinstagram{
 footer div{
         width: 60%;
 }
+
+
 } 
