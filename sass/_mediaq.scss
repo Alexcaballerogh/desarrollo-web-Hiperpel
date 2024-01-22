@@ -1,0 +1,51 @@
+/*mediaq*/
+/*celulares*/
+
+@media only screen and (max-width:500px) {
+    header{
+            flex-direction: column;
+
+         nav{
+            width: 100%;
+
+             ul{
+                 font-size: 1.5rem;
+               }
+
+            }
+    }
+    
+/*INDEX*/
+
+.padreflex{
+        flex-direction: column;
+
+}
+
+
+/*sobrenosotros*/
+.contenedor-grid{
+    grid-template-areas: 
+    "celda1" 
+    "texto1"
+    "texto1"
+    "celda2"
+    "texto2"
+    "texto2" 
+    "celda3"
+    "texto3"
+    "texto3";
+
+    grid-template-columns: 150px;
+
+    grid-template-rows: 25%;
+} 
+
+/*footer*/
+
+footer div{
+    width: 60%;
+}
+
+
+} 
