@@ -69,9 +69,9 @@ header nav ul {
   font-family: "Bebas Neue", sans-serif;
   display: flex;
   text-align: center;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
-  font-size: 20px;
+  font-size: 24px;
   justify-content: space-between;
   padding: 5px;
 }
@@ -234,13 +234,25 @@ footer.logoinstagram {
   }
   /*INDEX*/
   .padreflex {
+    font-family: "Bebas Neue", sans-serif;
+    display: flex;
+    text-align: center;
     flex-direction: column;
+    justify-content: space-around;
+    font-size: 20px;
+    justify-content: space-between;
+    padding: 5px;
   }
   /*sobrenosotros*/
   .contenedor-grid {
     grid-template-areas: "celda1" "texto1" "texto1" "celda2" "texto2" "texto2" "celda3" "texto3" "texto3";
-    grid-template-columns: 150px;
+    grid-template-columns: 300px;
     grid-template-rows: 25%;
+  }
+  .mapa {
+    height: 300px;
+    width: 100%;
+    margin-right: 40px;
   }
   /*footer*/
   footer div {
